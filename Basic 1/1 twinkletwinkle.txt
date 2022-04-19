@@ -1,0 +1,29 @@
+Sample_String = "Twinkle, twinkle, little star, How I wonder what you are! Up above the world so high, Like a diamond in the sky. Twinkle, twinkle, little star, How I wonder what you are"
+tab = "    "   #tab = 4 spaces 
+
+
+# put each word into a list using .split()# print(Sample_String.split(' ')) # split with space
+list_of_words = Sample_String.split(' ')
+print(list_of_words)
+#print index [0,3] Twinkle, twinkle, little star,
+#print ("tab", index[4,9])  How I wonder what you are!
+#print ("tab"*2, index[10,15]) Up above the world so high,
+#print ("tab"*2, index[16,21]) Like a diamond in the sky.
+#print (index[22,25]) Twinkle, twinkle, little star,
+#print ("tab", index[25,15]) How I wonder what you are
+twinkle = list_of_words[0:3+1]
+how_I = list_of_words[4:9+1]
+up_above = list_of_words[10:15+1]
+like_a = list_of_words[16:21+1]
+how_I2 = list_of_words[26:]
+
+#Note: * operator 
+print(*twinkle)
+print(tab,*how_I)
+print(tab*2,*up_above)
+print(tab*2, *like_a)
+print(*twinkle)
+print(tab,*how_I2)
+
+#Test 1 - This is an important comment
+#Test 2 - Important comment
