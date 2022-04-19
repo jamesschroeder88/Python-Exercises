@@ -1,0 +1,16 @@
+#Write a Python program which accepts the radius of a circle from the user and compute the area.
+
+#NOTE: area of circle = pi * r**2
+
+#Possible solution: Use sympy
+#from sympy import *
+
+
+#Solution:
+pi = 3.14159265359
+
+radius = input("Enter the radius: ")
+area = pi * int(radius)**2
+print("The area of the circle is: ", area)
+
+#Test 1 - Math breakthrough
