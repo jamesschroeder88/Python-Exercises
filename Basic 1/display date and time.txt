@@ -1,0 +1,8 @@
+#  Write a Python program to display the current date and time.
+
+import datetime
+import pytz 
+
+current_date_time = datetime.datetime.now(pytz.timezone('america/new_york'))
+
+print("The current date and time on the East Coast of America is : ", current_date_time)

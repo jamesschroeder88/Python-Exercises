@@ -1,0 +1,6 @@
+#Write a Python program to get the Python version you are using
+#Note I had to look up the syntax for this
+
+import sys
+
+print("User Current Version: ", sys.version)
