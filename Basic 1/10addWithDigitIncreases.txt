@@ -1,0 +1,16 @@
+#Write a Python program that accepts an integer (n) and computes the value of n+nn+nnn.
+
+# Sample value of n is 5
+# Expected Result : 615
+
+#NOTE: not 5+ 5**2 + 5**3
+#They want Literally 5 + 55 + 555 = 615
+
+n = int(input("Enter an integer: "))
+
+first_digit = n #5
+second_digit = first_digit*10 + n #5*10 =50+5 = 55
+third_digit = second_digit*10 + n #55*10 = 550+5 = 555
+
+result = first_digit+ second_digit + third_digit
+print(result)
