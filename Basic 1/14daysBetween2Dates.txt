@@ -1,0 +1,28 @@
+# Write a Python program to calculate number of days between two dates.
+# Sample dates : (2014, 7, 2), (2014, 7, 11)
+# Expected output : 9 days
+
+#Basic Solution
+# date1 = (2014, 7, 2)
+# date2 = (2014, 7, 11)
+
+# print(date2[2] - date1[2])
+
+
+#Better solution using datetime
+
+from datetime import date
+f_year = int(input("Enter the First year"))
+f_month = int(input("Enter the First month"))
+f_day = int(input("Enter the First day"))
+
+first_date = date(f_year, f_month, f_day)
+
+s_year = int(input("Enter the second year"))
+s_month = int(input("Enter the second month"))
+s_day = int(input("Enter the second day"))
+
+second_date = date(s_year, s_month, s_day)
+
+change = second_date - first_date
+print("The difference in days is", change.days)
