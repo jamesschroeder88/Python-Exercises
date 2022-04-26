@@ -1,0 +1,11 @@
+#Write a Python program to accept a filename from the user and print the extension of that.
+#Sample filename : abc.java
+#Output : java
+
+#filename = input from user
+#extension = whatever is after the "." in filename
+
+filename = input("Enter the filename: ")
+
+extension = filename.split(".",1) #splits at "." --> then makes a list with index [0,1]
+print(extension[1]) #prints index one of extension list
