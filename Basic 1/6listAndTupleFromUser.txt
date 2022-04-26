@@ -1,0 +1,20 @@
+#Write a Python program which accepts a sequence of comma-separated numbers from user and generate a list and a tuple with those numbers.
+
+#NOTE: Tuple: collection which is ordered and unchangeable, used to group together related data -> uses ('data1', 'data2')
+#      VS:
+#      List: used to store multiple items in a single variable -> uses ['data1','data2']
+
+#Example: Sample data : 3, 5, 7, 23   
+#List : ['3', ' 5', ' 7', ' 23'] 
+#Tuple : ('3', ' 5', ' 7', ' 23')
+
+user_numbers = input("Enter a sequence of comma-separated numbers") #gets the list of numbers as a string --> later we will split them individually
+
+#print(user_numbers)
+#print(type(user_numbers))
+
+numbers_list = user_numbers.split(',') #notice: if there are spaces they will be saved like in example.
+numbers_tuple = tuple(numbers_list) #Type cast list into a tuple
+
+print("List: ", numbers_list)
+print("Tuple: ", numbers_tuple)
