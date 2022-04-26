@@ -1,0 +1,9 @@
+# Write a Python program to get the volume of a sphere with radius 6.
+
+#Formula: V = 4/3 * pi * r^3
+
+radius = int(input("Enter the radius"))
+pi = 3.14159265359 #Can also import math
+volume = 4/3 * pi * radius**3
+
+print("The volume of the sphere is around: ", volume)
