@@ -1,0 +1,8 @@
+# Write a Python program to get a string which is n (non-negative integer) copies of a given string.
+
+#Example: string = "hello" and n = 3 --> then print "hello hello hello"
+
+string = input("Enter a string: ")
+num = int(input("Enter an integer number: "))
+string = string+" "
+print(string*num)
